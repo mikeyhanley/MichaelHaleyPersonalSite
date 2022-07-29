@@ -38,7 +38,9 @@
 
       <div id="paragraphArea">
         <div id="personalPara">
-          <h2 onclick="aboutHandler()">About Me.</h2>
+          <div id="aboutContainer">
+            <h2 onclick="aboutHandler()">About Me.</h2>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             aliquam accumsan ante, vitae tristique libero dapibus et. Aenean a
@@ -52,8 +54,10 @@
       </div>
 
       <div id="profilePictureArea">
-        <div id="profilePicContainer">
-          <img src="./images/profilePic.png" alt="Profile Picture" />
+        <div id="outerProfilePicContainer">
+          <div id="profilePicContainer">
+            <img src="./images/profilePic.png" alt="Profile Picture" />
+          </div>
         </div>
       </div>
       <div id="listArea">
