@@ -15,6 +15,7 @@
   </head>
   <body>
     <script src="script.js"></script>
+    <div id="overlay" onclick="pictureHandler(false)"></div>
     <div class="container">
       <div id="header">
         <h1>Michael Hanley</h1>
@@ -54,8 +55,12 @@
       </div>
 
       <div id="profilePictureArea">
-        <div id="outerProfilePicContainer">
-          <div id="profilePicContainer">
+        <div id="outerProfilePicContainer" class="outerProfilePicContainer">
+          <div
+            id="profilePicContainer"
+            class="profilePicContainer"
+            onclick="pictureHandler(true)"
+          >
             <img src="./images/profilePic.png" alt="Profile Picture" />
           </div>
         </div>
