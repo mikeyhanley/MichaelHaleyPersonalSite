@@ -1,7 +1,3 @@
-function aboutHandler() {
-  alert("hit");
-}
-
 function pictureHandler(set) {
   const overlay = document.getElementById("overlay");
 
@@ -24,5 +20,3 @@ function pictureHandler(set) {
     }, 300);
   }
 }
-
-function overlayHandler() {}

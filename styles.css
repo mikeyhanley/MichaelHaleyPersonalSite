@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
   grid-template-rows: 0.3fr 2.2fr 0.2fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -82,9 +82,7 @@ body {
 #aboutContainer > h2 {
   font-size: 5rem;
   display: inline;
-  cursor: pointer;
   color: #dcf235;
-  transition: all 0.3s ease;
 }
 
 #aboutContainer {
@@ -219,10 +217,7 @@ body {
     width: 6rem;
     height: 6rem;
   }
-  #aboutContainer > h2:hover {
-    color: #e7f484;
-    font-size: 5.5rem;
-  }
+
   .profilePicContainer:hover {
     cursor: pointer;
     width: 55rem;
