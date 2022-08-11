@@ -12,6 +12,9 @@ body {
   background-color: #323240;
   color: #f2f2f2;
 }
+a {
+  text-decoration: none;
+}
 #overlay {
   cursor: pointer;
   width: 100%;
