@@ -14,10 +14,23 @@
 
 <body>
   <script src="script.js"></script>
-  <div id="overlay" onclick="clickOutHandler()">
+  <div id="overlayContainer">
+    <div id="overlay" onclick="clickOutHandler()"></div>>
     <div id="borderForFoccussedProfilePic">
       <img src="./images/profilePic.png" alt="Profile Picture" id="focussedProfilePic" />
     </div>
+
+
+    <div id="projectsList">
+      <a class="projLink" href="https://amazing-pony-ab1305.netlify.app/">Painter's Palette</a>
+      <a href="https://whimsical-queijadas-09ff67.netlify.app" class="projLink">Sports Arena</a>
+      <a class="projLink" href="https://chipper-muffin-636cb2.netlify.app">Rock Paper Sissors</a>
+      <a class="projLink" href="https://mikeyhanley.github.io/PWA_A03">PWA Example</a>
+      <a class="projLink" href="https://mikeyhanley.github.io/simpleBlogExample/">Simple Blog Example</a>
+      <a class="projLink" href="https://mikeyhanley.github.io/simpleSlotGame/">Simple Slot Game</a>
+
+    </div>
+
 
   </div>
 
@@ -62,10 +75,10 @@
           <a class="listItem" href="./cv.pdf">Curriculum Vitae</a>
         </div>
         <div class="listItemContainer">
-          <a class="listItem">Projects</a>
+          <a onclick="projectsHandler()" class="listItem">Projects</a>
         </div>
         <div class="listItemContainer">
-          <a class="listItem" href="mailto: michael.hanley.work@gmail.com">Contact me</a>
+          <a class="listItem" href="mailto: michael.hanley.work@gmail.com">Contact Me</a>
         </div>
       </div>
     </div>

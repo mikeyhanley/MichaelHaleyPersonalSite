@@ -15,31 +15,70 @@ body {
 a {
   text-decoration: none;
 }
-#overlay {
+#overlayContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#overlay{
   cursor: pointer;
   width: 100%;
   height: 100%;
   background-color: #323240dc;
   z-index: 1;
   position: absolute;
-  display: none;
-  justify-content: center;
-  align-items: center;
 }
 #borderForFoccussedProfilePic{
+  z-index: 2;
   width: 77rem;
   height: 77rem;
   border-radius: 1rem;
-  /* border: #bfa7f2 solid 0.8rem; */
   display: flex;
   background-color: #bfa7f2;
   justify-content: center;
   align-items: center;
+  display: none;
 
 }
 #focussedProfilePic{
+  z-index: 2;
   width: 75rem;
   border-radius: 1rem;
+  display: none;
+}
+#projectsList{
+  z-index: 2;
+
+  border-radius: 1rem;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  background-color:#636573d7;
+  flex-direction: row;
+  width: 65%;
+  height: 75%;
+  display: none;
+  flex-wrap: wrap;
+
+
+}
+.projLink{
+  width: 35%;
+  cursor: pointer;
+  height: 17rem;
+  font-size: 4rem;
+  color: #323240;
+  font-weight: bold;
+  background-color: #dcf235;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 .container {
   display: grid;
@@ -258,6 +297,12 @@ a {
     font-size: 31.25%;
   }
 }
+@media only screen and (min-width: 1000) {
+  .projLink {
+height: 12rem;
+  }
+}
+
 @media only screen and (min-width: 2000px) {
   .container {
     width: 80%;
