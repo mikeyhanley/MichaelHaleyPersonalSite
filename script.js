@@ -1,22 +1,12 @@
-function pictureHandler(set) {
+function pictureHandler() {
   const overlay = document.getElementById("overlay");
 
-  const pictureContainer = document.getElementById("profilePicContainer");
+  overlay.style.display = "flex";
 
-  const outerPictureContainer = document.getElementById(
-    "outerProfilePicContainer"
-  );
+}
+function clickOutHandler() {
+  const overlay = document.getElementById("overlay");
 
-  if (set) {
-    overlay.style.display = "unset";
-    pictureContainer.setAttribute("class", "pictureContainerClicked");
-    outerPictureContainer.setAttribute("class", "outerpicContainerClicked");
-  } else {
-    overlay.style.display = "none";
-    pictureContainer.setAttribute("class", "profilePicContainerPostClick");
-    outerPictureContainer.setAttribute("class", "outerProfilePicContainer");
-    setTimeout(function () {
-      pictureContainer.setAttribute("class", "profilePicContainer");
-    }, 300);
-  }
+  overlay.style.display = "none";
+
 }
